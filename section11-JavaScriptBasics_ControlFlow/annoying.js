@@ -1,11 +1,7 @@
-var arrived = false;
-var answer;
+var answer = prompt("are we there yet?");
 
-while (arrived == false) {
-  answer = prompt("Are we there yet?");
-  if (answer == "yes" || answer == "yeah") {
-    arrived = true;
-  }
+while (answer !== "yes" && answer !== "yeah") {
+  var answer = prompt("are we there yet?");
 }
 
-alert("Yay, we finally made it!");
+alert("YAY, WE MADE IT!!!");
